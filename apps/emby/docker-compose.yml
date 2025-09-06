@@ -10,6 +10,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=${TZ}
+      - NVIDIA_VISIBLE_DEVICES=all
     restart: unless-stopped
     ports:
       - ${APP_PORT}:8096
